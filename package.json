@@ -1,0 +1,42 @@
+{
+	"name": "razorscript-syntax-highlighting",
+	"displayName": "RazorScript Syntax Highlighting",
+	"description": "Syntax highlighting for razorscript for Razor CE scripts",
+	"version": "0.0.1",
+	"publisher": "KilgoreTrout",
+	"engines": {
+		"vscode": "^1.92.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "razorscript",
+				"aliases": [
+					"RazorScript",
+					"razorscript"
+				],
+				"extensions": [
+					".razorscript"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "razorscript",
+				"scopeName": "source.razorscript",
+				"path": "./syntaxes/razorscript.tmLanguage.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "RazorScript Theme",
+				"uiTheme": "vs-dark",
+				"path": "./razorscript-color-theme.json"
+			}
+		]
+	}
+}

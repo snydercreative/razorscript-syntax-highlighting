@@ -1,0 +1,49 @@
+{
+    "name": "RazorScript Syntax Theme",
+    "type": "dark", // or "light"
+    "colors": {
+        // Specify UI colors if needed
+    },
+    "tokenColors": [
+		{
+			"scope": "keyword.control.razorscript",
+			"settings": {
+				"foreground": "#f0ba45",
+			}
+		},
+        {
+            "scope": "boolean.control.razorscript",
+            "settings": {
+                "foreground": "#ff3333"
+            }
+        },
+		{
+			"scope": "number.control.razorscript",			
+			"settings": {
+				"foreground": "#ae81ff"
+			}
+		}, 
+		{
+			"scope": "commands.control.razorscript",
+			"settings": {
+				"foreground": "#2871af"
+			}
+		},
+		{
+			"scope": "expressions.control.razorscript",
+			"settings": {
+				"foreground": "#dd253c"
+			}
+		}, {
+			"scope": "string.quoted.double.razorscript",
+			"settings": {
+				"foreground": "#00eeff"
+			}
+		}, {
+			"scope": "operators.control.razorscript",
+			"settings": {
+				"foreground": "#ffe2a9"
+			}
+		}
+    ]
+}

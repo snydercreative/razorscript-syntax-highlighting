@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RazorScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.razorscript",
+				"match": "\\b(if|while|for|return|elseif|endif|endwhile|foreach|endfor|else|in|as|break|continue|loop|replay|stop|dead)\\b"
+			}, 
+			{
+				"name": "boolean.control.razorscript",
+				"match": "\\b(not|and|or)\\b"
+			}, {
+				"name": "number.control.razorscript",
+				"match": "\\b\\d+\\b"				
+			}, {
+				"name": "commands.control.razorscript",
+				"match": "\\b(say|wft|target|createtimer|settimer|pause|overhead|findtype|findtypelist|targettype|lifttype|attack|cast|classicuo|cleardragdrop|clearhands|cooldown|dclick|dclicktype|dress|drop|droprelloc|getlabel|hotkey|interrupt|lift|lifttype|music|potion|rename|random|script|setability|setvar|skill|sound|unsetvar|virtue|walk|wait|pause|undress)\\b"
+			}, {
+				"name": "expressions.control.razorscript",
+				"match": "\\b(ingump|skill|removelist|createlist|ground|gumpexists|gumpresponse|inlist|list|listexists|poplist|count|counter|findtype|insysmsg|itemcount|queued|targetexists|varexist|diffhits|diffmana|diffstam|diffweight|followers|findbuff|hidden|hp|maxhp|lhandempty|invuln|mana|maxmana|maxfollowers|maxweight|mounted|name|paralyzed|poisoned|position|rhandempty|skill|stam|maxstam|str|dex|int|warmode|weight|timer|timerexists)\\b"
+			}, {
+				"name": "operators.control.razorscript",
+				"match": ">|<|=|@|!"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.razorscript",
+			"begin": "\"|\\'",
+			"end": "\"|\\'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.razorscript",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.razorscript"
+}
